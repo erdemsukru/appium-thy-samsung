@@ -10,7 +10,7 @@ Feature: Thy book a flight
     When ucus rezervasyonu secilir
     When tek yon secilir
     When inis havalimani secilir
-    When tek yon ucus secilir: "Adana"
+    When tek yon ucus secilir: "Gaziantep"
     When search butonuna basilir
     When ucuslar ucuzdan pahaliya siralanir
     When en ucuzu secilir
@@ -20,10 +20,12 @@ Feature: Thy book a flight
     When ekstra hizmetler secilmeden devam edilir
     When isim:"Erdem" ve soyisim:"Demirtas" gir
     When cinsiyet secilir
-    When TCKN girilir: "16084962264"
     When dogum tarihi girilir: "01-04-1994"
-    When yolcunun iletisim bilgileri doldurulur
+    When yolcunun mail adresi girilir:"erdemsukrudemirtas@gmail.com"
+    When TCKN girilir: "16084962264"
+    When yolcu bilgileri kayit edilir
+    When yolcunun telefonunun ulke kodu secilir
+    When yolcunun telefonu girilir: "5069358881"
     When yolcunun iletisim izinleri verilir
-    When koltuk secimi gecilir
     When ucus ozeti onaylanir
 

@@ -79,17 +79,16 @@ public class homePage {
         //elementHelper.sendKeys(addBirthday, "01-04-1994");
         //elementHelper.sendKeys(addEmail, "erdemsukrudemirtas@gmail.com");
         //elementHelper.click(nationality);
-        //elementHelper.sendKeys(addTCKN, "16084962264");
-        elementHelper.click(addPassenger);
-        elementHelper.click(continueLast);
-        elementHelper.sendKeys(countryCode, "90");
-        elementHelper.sendKeys(searchCountryCode, "Türkiye");
-        elementHelper.click(searchTurkey);
-        elementHelper.sendKeys(telNumber, "5069358881");
-        //elementHelper.click(emailPermission);
+        ////elementHelper.sendKeys(addTCKN, "16084962264");
+        //elementHelper.click(addPassenger);
+        //elementHelper.click(continueLast);
+        //elementHelper.sendKeys(countryCode, "90");// elementHelper.sendKeys(searchCountryCode, "Türkiye");
+     //lementHelper.click(searchTurkey);
+       //lementHelper.sendKeys(telNumber, "5069358881");
+       // //elementHelper.click(emailPermission);
         //elementHelper.click(smsPermission);
-        elementHelper.click(extraService);
-        elementHelper.click(lastContinue);
+        //elementHelper.click(extraService);
+        //elementHelper.click(lastContinue);
     }
     public void bildirimleriGec(){
         elementHelper.click(skipNotifications);
@@ -159,8 +158,8 @@ public class homePage {
 
         elementHelper.sendKeys(addTCKN,tckn);
     }
-    public void yolcununIletisimBilgileriDoldurulur(String email){
-        elementHelper.sendKeys(addEmail, email);
+    public void yolcununIletisimBilgileriDoldurulur(String countryRegion){
+        elementHelper.sendKeys(countryCode,countryRegion);
     }
     public void yolcununIletisimIzinleriVerilir(){
         elementHelper.click(emailPermission);
@@ -170,6 +169,27 @@ public class homePage {
         elementHelper.click(popup);
     }
 
+    public void yolcununMailAdresiGirilir(String mail){
+        elementHelper.sendKeys(addEmail,mail);
+    }
+
+    public void yolcuBilgileriKayitEdilir(){
+        elementHelper.click(addPassenger);
+        elementHelper.click(continueLast);
+    }
+
+    public void yolcununTelefonuGirilir(String cepTel){
+        elementHelper.sendKeys(telNumber, cepTel);
+    }
+
+    public void yolcununTelefonununUlkeKoduSecilir (){
+        elementHelper.click(countryCode);
+        elementHelper.click(searchCountryCode);
+        elementHelper.click(searchTurkey);
+    }
+    public void ucusOzetiOnaylanir(){
+        elementHelper.click(lastContinue);
+    }
 
 
 }

@@ -71,22 +71,14 @@ public class homePageDefinitions {
     public void kisiBilgileriDoldurulur() {
     }
 
-    @When("yolcunun iletisim bilgileri doldurulur")
-    public void yolcununIletisimBilgileriDoldurulur(String email) {
-        login.yolcununIletisimBilgileriDoldurulur(email);
-    }
-
     @When("yolcunun iletisim izinleri verilir")
     public void yolcununIletisimIzinleriVerilir() {
         login.yolcununIletisimIzinleriVerilir();
     }
 
-    @When("koltuk secimi gecilir")
-    public void koltukSecimiGecilir() {
-    }
-
     @When("ucus ozeti onaylanir")
     public void ucusOzetiOnaylanir() {
+        login.ucusOzetiOnaylanir();
     }
 
     @When("tek yon ucus secilir: {string}")
@@ -137,5 +129,25 @@ public class homePageDefinitions {
     @When("TCKN girilir: {string}")
     public void tcknGirilir(String tckn) {
         login.tcknGirilir(tckn);
+    }
+
+    @When("yolcunun mail adresi girilir:{string}")
+    public void yolcununMailAdresiGirilir(String mail) {
+        login.yolcununMailAdresiGirilir(mail);
+    }
+
+    @When("yolcu bilgileri kayit edilir")
+    public void yolcuBilgileriKayitEdilir() {
+        login.yolcuBilgileriKayitEdilir();
+        ;
+    }
+    @When("yolcunun telefonu girilir: {string}")
+    public void yolcununTelefonuGirilir(String cepTel) {
+        login.yolcununTelefonuGirilir(cepTel);
+    }
+
+    @When("yolcunun telefonunun ulke kodu secilir")
+    public void yolcununTelefonununUlkeKoduSecilir() {
+        login.yolcununTelefonununUlkeKoduSecilir();
     }
 }
