@@ -15,10 +15,12 @@ Feature: Thy book a flight
     When ucuslar ucuzdan pahaliya siralanir
     When en ucuzu secilir
     When ecofly sinifi secilir
+    When ecofly sinifina devam edilir
+    When ecofly son olarak secilir
     When ekstra hizmetler secilmeden devam edilir
-    When dogum tarihi girilir "01-04-1994"
     When isim:"Erdem" ve soyisim:"Demirtas" gir
     When cinsiyet secilir
+    When dogum tarihi girilir "01-04-1994"
     When TCKN girilir "16084962264"
     When yolcunun iletisim bilgileri doldurulur
     When yolcunun iletisim izinleri verilir

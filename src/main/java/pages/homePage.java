@@ -135,10 +135,13 @@ public class homePage {
 
     public void ecoflySinifiSecilir(){
         elementHelper.click(selectEcoFly);
+    }
+    public void ecoflySinifinaDevamEdilir(){
         elementHelper.click(continueEcoFly);
+    }
+    public void ecoflySonOlarakSecilir(){
         elementHelper.click(stayOnEcoFly);
     }
-
     public void selectArrivalTicket(String arrivalAirport) {
         elementHelper.sendKeys(searchAnkara, arrivalAirport);
 

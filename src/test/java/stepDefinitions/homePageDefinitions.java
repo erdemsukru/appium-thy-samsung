@@ -126,4 +126,14 @@ public class homePageDefinitions {
     public void popupKapatilir() {
         login.popupKapatilir();
     }
+
+    @When("ecofly sinifina devam edilir")
+    public void ecoflySinifinaDevamEdilir() {
+        login.ecoflySinifinaDevamEdilir();
+    }
+
+    @When("ecofly son olarak secilir")
+    public void ecoflySonOlarakSecilir() {
+        login.ecoflySonOlarakSecilir();
+    }
 }
