@@ -148,7 +148,6 @@ public class homePage {
     }
     public void dogumTarihiGirilir(String birthday){
         elementHelper.sendKeys(addBirthday, birthday);
-
     }
 
     public void cinsiyetSecilir(){
@@ -157,6 +156,7 @@ public class homePage {
     }
 
     public void tcknGirilir(String tckn){
+
         elementHelper.sendKeys(addTCKN,tckn);
     }
     public void yolcununIletisimBilgileriDoldurulur(String email){

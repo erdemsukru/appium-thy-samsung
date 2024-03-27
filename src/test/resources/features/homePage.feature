@@ -20,8 +20,8 @@ Feature: Thy book a flight
     When ekstra hizmetler secilmeden devam edilir
     When isim:"Erdem" ve soyisim:"Demirtas" gir
     When cinsiyet secilir
-    When dogum tarihi girilir "01-04-1994"
-    When TCKN girilir "16084962264"
+    When TCKN girilir: "16084962264"
+    When dogum tarihi girilir: "01-04-1994"
     When yolcunun iletisim bilgileri doldurulur
     When yolcunun iletisim izinleri verilir
     When koltuk secimi gecilir

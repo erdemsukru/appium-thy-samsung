@@ -106,20 +106,11 @@ public class homePageDefinitions {
         login.isimSoyisimGir(isim,soyisim);
     }
 
-    @When("dogum tarihi girilir")
-    public void dogumTarihiGirilir(String birthday) {
-        login.dogumTarihiGirilir(birthday);
-    }
+
 
     @When("cinsiyet secilir")
     public void cinsiyetSecilir() {
         login.cinsiyetSecilir();
-    }
-
-    @When("TCKN:{string} girilir")
-    public void tcknGirilir(String tckn) {
-        login.tcknGirilir(tckn);
-
     }
 
     @When("popup kapatilir")
@@ -135,5 +126,16 @@ public class homePageDefinitions {
     @When("ecofly son olarak secilir")
     public void ecoflySonOlarakSecilir() {
         login.ecoflySonOlarakSecilir();
+    }
+
+    @When("dogum tarihi girilir: {string}")
+    public void dogumTarihiGirilir(String birthday) {
+        login.dogumTarihiGirilir(birthday);
+    }
+
+
+    @When("TCKN girilir: {string}")
+    public void tcknGirilir(String tckn) {
+        login.tcknGirilir(tckn);
     }
 }
